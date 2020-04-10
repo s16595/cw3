@@ -33,10 +33,18 @@ namespace WebApplication3.Controllers
         }
 
 
-        [HttpGet("{Order}")]
+        [HttpGet("list")]
         public IActionResult GetStudents(string order)
         {
             return Ok(_dbService.GetStudents());
+        }
+
+
+
+        [HttpGet("semestr/{id}")]
+        public IActionResult GetStudentsSemestr(string id)
+        {
+            return Ok(_dbService.GetStudentsSemestr(id));
         }
 
 

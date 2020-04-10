@@ -14,5 +14,6 @@ namespace WebApplication3.DAL
         public void createStudent(Student student);
 
         public void updateStudent(int id, Student student);
+        public IEnumerable<Enrollment> GetStudentsSemestr(string id);
     }
 }

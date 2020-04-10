@@ -31,6 +31,11 @@ namespace WebApplication3.DAL
             return _students;
         }
 
+        public IEnumerable<Enrollment> GetStudentsSemestr(string id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void removeId(int id)
         {
             Student toRemove = null;
